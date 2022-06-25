@@ -1,5 +1,6 @@
 23:25 vendredi  24  juin  2022
 
+https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
 https://www.delftstack.com/fr/howto/java/how-to-get-the-current-date-time-in-java/
 https://www.delftstack.com/fr/howto/java/java-get-current-timestamp/
 https://koor.fr/Java/API/java/lang/System/currentTimeMillis.wp
