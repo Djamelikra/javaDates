@@ -4,6 +4,7 @@ import java.awt.Toolkit;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
 
 import javax.swing.JOptionPane;
@@ -46,6 +47,11 @@ public class CurrentDate {
 	
 	public void dtCalendar() {
 		
+		String sDtDate = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+		Toolkit.getDefaultToolkit().beep();
+		JOptionPane.showMessageDialog(null, sDtDate, "Calendar",1);
+		
+		
 		
 	}
 
@@ -54,7 +60,9 @@ public class CurrentDate {
 		CurrentDate cd = new CurrentDate();
 //		cd.tryDate();
 //		cd.currDate();
-		cd.dateFormatter();
+//		cd.dateFormatter();
+		cd.dtCalendar();
+		
 		
 
 	}
