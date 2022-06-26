@@ -61,8 +61,6 @@ public class CurrentDate {
 	
 	public void nuncCalendar() {
 		Calendar nuncal = Calendar.getInstance();
-		
-
 		Toolkit.getDefaultToolkit().beep();
 		JOptionPane.showMessageDialog(null, nuncal.get(Calendar.YEAR) , "Year" , 1); 
 		JOptionPane.showMessageDialog(null, nuncal.get(Calendar.MONTH), "MONTH" , 1);
