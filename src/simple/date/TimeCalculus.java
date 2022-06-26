@@ -11,11 +11,12 @@ public class TimeCalculus {
 	public void timeElapsed() {
 		Instant start = Instant.now();
 //		runAlgorithm();
+		JOptionPane.showMessageDialog(null,"runAlgorithm(...)", "Calc" , 1); 
 		Instant end = Instant.now();
 		Duration timeElapsed = Duration.between(start, end);
 		long millis = timeElapsed.toMillis();
 		Toolkit.getDefaultToolkit().beep();
-		JOptionPane.showMessageDialog(null, String.valueOf(millis), "Calc" , 1); 
+		JOptionPane.showMessageDialog(null, String.valueOf(millis), "Miliseconds" , 1); 
 		
 		
 	}
@@ -23,7 +24,9 @@ public class TimeCalculus {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		TimeCalculus tc = new TimeCalculus();
+		tc.timeElapsed();
+		
 
 	}
 
