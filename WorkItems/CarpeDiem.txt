@@ -1,0 +1,13 @@
+Carpe diem
+Public Sub CarpeDiem()
+'Nombre de jours écoulés
+Dim varXiemJour  As Variant
+
+varXiemJour = DatePart("y", Date, vbUseSystemDayOfWeek, vbFirstFourDays)
+MsgBox "Nous somme le : " & Format$(Date, "long date") & vbCr & _
+               "Nous sommes au trimestre " & DatePart("q", Date) & vbCr & _
+               "Nous sommes au mois N° " & DatePart("m", Date) & vbCr & _
+               "Nous sommes à la semaine N° " & DatePart("ww", Date) & vbCr & _
+               "Il s'est écoulé : " & varXiemJour & " jours depuis le début de cette année", vbInformation, "Carpe diem"
+
+End Sub

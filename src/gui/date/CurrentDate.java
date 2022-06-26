@@ -5,13 +5,13 @@ import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
 
 public class CurrentDate {
 
 	public void display() {
 		JTextArea display = new JTextArea(10, 30);
 		String texte = "nombre\tdouble\tquart\n";
+		
 		for (int i = 1; i < 7; i++) {
 			int val1 = i * 2;
 			double val2 = i / 4.0;
