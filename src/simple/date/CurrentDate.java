@@ -41,9 +41,13 @@ public class CurrentDate {
 		
 		
 		Toolkit.getDefaultToolkit().beep();
-		JOptionPane.showMessageDialog(null, sb,"Full date:",1);
+		JOptionPane.showMessageDialog(null, sb,"Date & time :",1);
 	}
 	
+	public void dtCalendar() {
+		
+		
+	}
 
 
 	public static void main(String[] args) {
