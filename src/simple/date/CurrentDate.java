@@ -30,14 +30,26 @@ public class CurrentDate {
 		System.out.println(dtfDate.format(LocalDateTime.now()));
 		DateTimeFormatter dtfHour = DateTimeFormatter.ofPattern("HH:mm:ss");
 		System.out.println(dtfHour.format(LocalDateTime.now()));
+		
+		String sDate = dtfDate.format(LocalDateTime.now());
+		StringBuilder sb = new StringBuilder(sDate);
+		String sTime = dtfHour.format(LocalDateTime.now());
+		sb.append(" ");
+		sb.append(sTime);
+		sb.append(" ☺");
+
+		
+		
+		Toolkit.getDefaultToolkit().beep();
+		JOptionPane.showMessageDialog(null, sb,"Full date:",1);
 	}
 	
 
 
 	public static void main(String[] args) {
 		CurrentDate cd = new CurrentDate();
-		cd.tryDate();
-		cd.currDate();
+//		cd.tryDate();
+//		cd.currDate();
 		cd.dateFormatter();
 		
 
