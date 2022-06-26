@@ -69,6 +69,7 @@ public class CurrentDate {
 	}
 
 	public static void main(String[] args) {
+		
 		CurrentDate cd = new CurrentDate();
 //		cd.tryDate();
 //		cd.currDate();
