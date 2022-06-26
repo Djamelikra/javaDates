@@ -15,8 +15,10 @@ public class TimeCalculus {
 		Instant end = Instant.now();
 		Duration timeElapsed = Duration.between(start, end);
 		long millis = timeElapsed.toMillis();
+		long nanos = timeElapsed.toNanos();
 		Toolkit.getDefaultToolkit().beep();
 		JOptionPane.showMessageDialog(null, String.valueOf(millis), "Miliseconds" , 1); 
+		JOptionPane.showMessageDialog(null, String.valueOf(nanos), "Nanoseconds" , 1); 
 		
 		
 	}
