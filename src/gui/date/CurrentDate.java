@@ -1,5 +1,6 @@
 package gui.date;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.Toolkit;
 
@@ -74,11 +75,18 @@ public class CurrentDate {
 
 		display.setFont(new Font("Consolas", Font.ITALIC, 14));
 		display.setText(texte);
+		display.setEditable(false);
+		display.setOpaque(false);
 		Toolkit.getDefaultToolkit().beep();
 		JOptionPane.showMessageDialog(null, display, "Numbers List Consolas:", -1); // PLAIN_MESSAGE
 
 		display.setFont(new Font("Algerian", Font.PLAIN, 24));
 		display.setText(texte);
+		display.setEditable(false);
+//		display.setOpaque(false);
+		display.setBackground(Color.GREEN);
+		display.setForeground(Color.RED);
+		
 		Toolkit.getDefaultToolkit().beep();
 		JOptionPane.showMessageDialog(null, display, "Numbers List Algerian:", -1); // PLAIN_MESSAGE
 
