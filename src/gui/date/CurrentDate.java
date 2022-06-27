@@ -20,7 +20,7 @@ public class CurrentDate {
 
 		display.setText(texte);
 		Toolkit.getDefaultToolkit().beep();
-		JOptionPane.showMessageDialog(null, display, "Numbers List:", 1);
+		JOptionPane.showMessageDialog(null, display, "Numbers List:",-1);
 
 		System.exit(0);
 
