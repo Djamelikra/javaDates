@@ -12,21 +12,12 @@ import javax.swing.UIManager;
 public class CarpeDiem {
 	
 	public void currentFullDate() {
-		SimpleDateFormat cfd = new SimpleDateFormat("EEEE dd MMMM yyyy k:mm:ss (SS)");
+		SimpleDateFormat cfd = new SimpleDateFormat("EEEE dd MMMM yyyy k:mm:ss");
 		String sCfd = cfd.format(new Date());
 		
 		Toolkit.getDefaultToolkit().beep();
 		JOptionPane.showMessageDialog(null, sCfd, "currentFullDate",  1, new ImageIcon("icons/eu.png"));
-		
-		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 
 	public static void main(String[] args) {
